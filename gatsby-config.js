@@ -10,5 +10,13 @@ module.exports = {
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-remove-trailing-slashes',
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-XXXXXX',
+        includeInDevelopment: false,
+      },
+    },
   ],
 };

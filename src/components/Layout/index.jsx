@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Seo from '../Seo';
-import MainNav from '../MainNav';
 
 const Layout = (props) => {
   const {
@@ -10,10 +9,9 @@ const Layout = (props) => {
   } = props;
 
   return (
-    <main>
+    <main className="flex flex-col min-h-screen">
       <Seo title={title} description={description} image={image} />
-      <MainNav />
-      <section className="container mx-auto">
+      <section>
         {children}
       </section>
     </main>
